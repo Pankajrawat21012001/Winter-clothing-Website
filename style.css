@@ -1,0 +1,215 @@
+body{
+    background: url("background.png");
+    object-fit: cover;
+    object-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Hide scrollbars */
+}
+
+/* .navbar{
+    width: 100px;
+} */
+
+.navbar .navbar-container{
+    display: flex;
+}
+
+.navbar .navbar-items{
+    display: block;
+    width: 75%;
+    margin: auto;
+    position: relative;
+    opacity: 0;
+    animation: items-transition 1s ease-in-out 0.8s forwards;
+}
+@keyframes items-transition{
+    from{
+        top: -100px;
+        opacity: 100%;
+    }
+    to{
+        top: 31px;
+        opacity: 100%;
+    }
+}
+
+.navbar .navbar-items a{
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 1rem;
+    color: rgb(71, 71, 71);
+}
+
+.navbar .navbar-logo img{
+    position: relative;
+    width: 147px;
+    height: 50px;
+    animation: logo-transition .8s ease-in-out forwards;
+}
+@keyframes logo-transition{
+    from{
+        left: 40px;
+        top: -100px;
+    }
+    to{
+        left: 40px;
+        top: 21px;
+    }
+}
+
+
+.navbar .navbar-cart img{
+    position: relative;
+    width: 50px;
+    height: 50px;
+    opacity: 0;
+    animation: cart-transition 1s ease-in-out 1.5s forwards;
+}
+
+
+@keyframes cart-transition{
+    from{
+        top: -200px;
+        right: 40px;
+        opacity: 100%;
+    }
+    to{
+        top: 21px;
+        right: 40px;
+        opacity: 100%;
+    }
+}
+/* ################################            follow-handles          ##################################### */
+
+.follow-handles-container .follow-handles{
+    transform: rotate(-90deg);
+    position: relative;
+    bottom: 20vh;
+    font-size: 1em;
+    opacity: 0;
+    animation: follow-handles-animation 2s ease-in-out 2.8s forwards;
+}
+
+@keyframes follow-handles-animation{
+    0%{
+        opacity: 1;
+        left: -80vw;
+    }
+    100%{   
+        opacity: 1;
+        left: -47vw;
+    }
+}
+
+.follow-handles-container .follow-handles a{
+    padding-right: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+
+
+
+/* #################################            section-heading          ############################################### */
+.section-heading .section-heading-container{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 400px;
+    position: relative;
+    top: 30vh;
+    left: 20vw;
+    opacity: 0%; 
+    animation: section-heading-animation 1s ease-in-out 2.8s forwards;
+}
+
+@keyframes section-heading-animation{
+    0%{
+        top: 30vh;
+        left: -50vw;
+        opacity: 100%;
+    }
+    100%{
+        top: 30vh;
+        left: 20vw;
+        opacity: 100%;
+    }
+}
+
+
+
+.section-heading-container .section-heading-first a{
+    text-decoration: none;
+    background: url("Screenshot 2021-08-17 122652.png");
+    color: white;
+    display: block;
+    width: 9vw;
+    height: 5vh;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 0.5rem;
+    border-radius: 10px;
+    font-size: 17px;
+    font-weight: 900;
+    opacity: 0.8;
+}
+
+
+.section-heading-container .section-heading-second{
+    font-size: 3em;
+    padding: 10px 0;
+    margin: 10px 0;
+    height: 12vh;
+}
+
+
+.section-heading-container .section-heading-third{
+    font-size: 1.2em;
+    padding: 10px 0;
+    margin: 10px 0;
+}
+
+.section-heading-container .section-heading-fourth img{
+    width: 50px;
+    padding-right: 20px;
+}
+
+
+/* ###############################      section-image       ###################################################### */
+
+.section-image-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-image-container img{
+    position: relative;
+    object-fit: cover;
+    object-position: center;
+    width: 1vw;
+    height: 1vh;
+    bottom: 13vh;
+    left: 19vw;
+    opacity: 0;
+    animation: section-image-animation 2s ease-in-out 2.8s forwards;
+}
+
+@keyframes section-image-animation{
+    0%{
+        width: 1vw;
+        height: 1vh;
+        bottom: 13vh;
+        left: 19vw;
+        opacity: 1;
+    }
+    100%{
+        width: 41vw;
+        height: 82vh;
+        bottom: 42vh;
+        left: 21vw;
+        opacity: 1;
+    }
+}
